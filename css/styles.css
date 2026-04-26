@@ -429,3 +429,36 @@ footer p{font-size:0.75rem;color:rgba(255,255,255,0.38);}
   .nav-search{width:min(240px,64vw);}
   .back-to-top{right:18px;bottom:18px;width:42px;height:42px;}
 }
+
+.about-subtitle{
+  font-size:1.05rem;
+  color:var(--gold-lt);
+  margin:0 0 22px;
+  font-weight:700;
+  letter-spacing:0.4px;
+}
+
+.supervisor-title{
+  margin-top:42px;
+}
+
+.supervisor-grid{
+  display:grid;
+  grid-template-columns:minmax(240px,280px);
+  gap:22px;
+}
+
+.supervisor-card{
+  max-width:280px;
+}
+
+.domain-image{
+  width:100%;
+  max-width:370px;
+  height:auto;
+  display:block;
+  border-radius:18px;
+  border:1.5px solid var(--border);
+  box-shadow:var(--shadow);
+  background:var(--off);
+}
