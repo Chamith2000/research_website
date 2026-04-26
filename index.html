@@ -49,13 +49,76 @@
     </p>
 
     <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 35px;">
-  <span style="background: rgba(0,180,216,0.1); color: #00b4d8; padding: 7px 14px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(0,180,216,0.3);">🎯 Adaptive Difficulty & MCQ Generation</span>
-  
-  <span style="background: rgba(0,180,216,0.1); color: #00b4d8; padding: 7px 14px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(0,180,216,0.3);">📈 LSTM Progress Monitoring</span>
-  
-  <span style="background: rgba(0,180,216,0.1); color: #00b4d8; padding: 7px 14px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(0,180,216,0.3);">🧩 Content Quality & Feedback Analysis</span>
-  
-  <span style="background: rgba(0,180,216,0.1); color: #00b4d8; padding: 7px 14px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(0,180,216,0.3);">🧠 Emotion & Integrity Monitoring</span>
+      <div class="feature-badges">
+        <div class="feature-badge">
+    <span class="feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="8" cy="6" r="2" fill="currentColor"/>
+        <circle cx="15" cy="12" r="2" fill="currentColor"/>
+        <circle cx="10" cy="18" r="2" fill="currentColor"/>
+      </svg>
+    </span>
+          <span class="feature-content">
+      <span class="feature-title">Adaptive Difficulty &amp; MCQ Generation</span>
+      <span class="feature-desc">
+        Recommends suitable difficulty levels and generates topic-based MCQs according to each learner’s performance.
+      </span>
+    </span>
+        </div>
+
+        <div class="feature-badge">
+    <span class="feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M4 19V5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M4 19h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M7 15l4-4 3 3 5-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="7" cy="15" r="1.7" fill="currentColor"/>
+        <circle cx="11" cy="11" r="1.7" fill="currentColor"/>
+        <circle cx="14" cy="14" r="1.7" fill="currentColor"/>
+        <circle cx="19" cy="7" r="1.7" fill="currentColor"/>
+      </svg>
+    </span>
+          <span class="feature-content">
+      <span class="feature-title">LSTM Progress Monitoring</span>
+      <span class="feature-desc">
+        Analyzes learner history to forecast future performance trends and support early intervention.
+      </span>
+    </span>
+        </div>
+
+        <div class="feature-badge">
+    <span class="feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M7 3h10l3 3v15H4V3h3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M8 11h8M8 15h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M16 3v4h4" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M8 19l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+          <span class="feature-content">
+      <span class="feature-title">Content Quality &amp; Feedback Analysis</span>
+      <span class="feature-desc">
+        Evaluates questions, teacher guides, and student feedback to identify content issues and improvement areas.
+      </span>
+    </span>
+        </div>
+
+        <div class="feature-badge">
+    <span class="feature-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none">
+        <path d="M12 3l7 3v5c0 4.8-2.8 8.7-7 10-4.2-1.3-7-5.2-7-10V6l7-3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M9 12l2 2 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </span>
+          <span class="feature-content">
+      <span class="feature-title">Emotion &amp; Integrity Monitoring</span>
+      <span class="feature-desc">
+        Detects engagement signals and academic integrity concerns during remote learning sessions.
+      </span>
+    </span>
+        </div>
+      </div>
 </div>
     
     </div>
@@ -195,15 +258,20 @@
     <p class="sdesc">Select an assessment from the drop-down menu to view how each deliverable connects to the final dissertation. Dates and marks are kept as TBA where the official module schedule must be inserted.</p>
     <div class="milestone-picker">
       <div class="milestone-control">
-        <label for="milestoneSelect">Choose Assessment</label>
-        <select class="milestone-select" id="milestoneSelect">
-          <option value="proposal">Project Proposal</option>
-          <option value="progress1">Progress Presentation-1</option>
-          <option value="progress2">Progress Presentation-2</option>
-          <option value="finalAssessment">Final Assessment</option>
-          <option value="viva">Viva</option>
-          <option value="researchPaper">Final Report</option>
-        </select>
+        <label>Choose Assessment</label>
+        <div class="custom-select" id="customSelect">
+          <div class="cs-trigger" id="csTrigger" tabindex="0" role="combobox" aria-expanded="false" aria-haspopup="listbox">
+            <span id="csLabel">Proposal Report Submission</span>
+            <span class="cs-arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </span>
+          </div>
+          <div class="cs-dropdown" id="csDropdown" role="listbox">
+            <div class="cs-list" id="csList"></div>
+          </div>
+        </div>
       </div>
       <div class="milestone-detail" aria-live="polite">
         <h3 id="milestoneTitle">Project Proposal</h3>
@@ -291,8 +359,15 @@
   <div class="container">
     <div class="eyebrow">Presentations</div>
     <h2 class="stitle">Presentation Slides</h2>
-    <p class="sdesc">Presentation material summarising the research problem, integrated architecture, component methodology, implementation progress, evaluation results, limitations, and future work.</p>
+    <p class="sdesc">
+      Presentation material summarising the research problem, integrated architecture,
+      component methodology, implementation progress, evaluation results, limitations,
+      and future work.
+    </p>
+
     <div class="slides-grid">
+
+      <!-- Proposal Presentation -->
       <div class="scard">
         <div class="sthumb" style="background:linear-gradient(135deg,#0d1f3c 0%,#1a4a8a 100%);">
           <svg width="90" height="76" viewBox="0 0 90 76" fill="none">
@@ -304,8 +379,19 @@
             <rect x="29" y="66" width="24" height="5" rx="2.5" fill="rgba(255,255,255,0.18)"/>
           </svg>
         </div>
-        <div class="sbody"><h3>Proposal Presentation</h3><p>Research problem, objectives, scope, and four-component plan</p><a class="slink" href="#">View Slides ↗</a></div>
+
+        <div class="sbody">
+          <h3>Proposal Presentation</h3>
+          <p>Research problem, objectives, scope, and four-component plan</p>
+          <a class="slink"
+             href="https://docs.google.com/presentation/d/1WgdsRfWbQP6NNt8GJ1lBDxWp91h103KU/edit?usp=drive_link&ouid=105411969926452653442&rtpof=true&sd=true"
+             target="_blank">
+            View Slides ↗
+          </a>
+        </div>
       </div>
+
+      <!-- Progress Presentation 1 -->
       <div class="scard">
         <div class="sthumb" style="background:linear-gradient(135deg,#162e56 0%,#1a4a8a 100%);">
           <svg width="90" height="76" viewBox="0 0 90 76" fill="none">
@@ -317,8 +403,41 @@
             <rect x="56" y="32" width="10" height="24" rx="2" fill="rgba(0,180,216,0.6)"/>
           </svg>
         </div>
-        <div class="sbody"><h3>Progress Presentation — 1</h3><p>Literature survey, architecture, datasets, and early AI design</p><a class="slink" href="#">View Slides ↗</a></div>
+
+        <div class="sbody">
+          <h3>Progress Presentation — 1</h3>
+          <p>Literature survey, architecture, datasets, and early AI design</p>
+          <a class="slink"
+             href="https://drive.google.com/file/d/1HZ-Kg9QUOKw7BZiW7pioUsBkP9g2dkB1/view?usp=drive_link"
+             target="_blank">
+            View Slides ↗
+          </a>
+        </div>
       </div>
+
+      <!-- Progress Presentation 2 -->
+      <div class="scard">
+        <div class="sthumb" style="background:linear-gradient(135deg,#162e56 0%,#1a4a8a 100%);">
+          <svg width="90" height="76" viewBox="0 0 90 76" fill="none">
+            <rect x="6" y="6" width="70" height="50" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <rect x="33" y="18" width="24" height="16" rx="5" stroke="rgba(255,255,255,0.28)" stroke-width="1.6" fill="none"/>
+            <path d="M28 32h34v18a5 5 0 01-5 5H33a5 5 0 01-5-5V32Z" fill="rgba(255,255,255,0.08)"/>
+            <circle cx="45" cy="41" r="3" fill="rgba(255,255,255,0.28)"/>
+          </svg>
+        </div>
+
+        <div class="sbody">
+          <h3>Progress Presentation — 2</h3>
+          <p>Model training, APIs, dashboard integration, and interim testing</p>
+          <a class="slink"
+             href="https://drive.google.com/file/d/1rxeoS4zF1gbjcoeSkD3yENx5grahkJ0B/view?usp=drive_link"
+             target="_blank">
+            View Slides ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Final Presentation -->
       <div class="scard">
         <div class="sthumb" style="background:linear-gradient(135deg,#1e2d40,#2c3e58);">
           <svg width="90" height="76" viewBox="0 0 90 76" fill="none">
@@ -328,19 +447,18 @@
             <circle cx="45" cy="41" r="3" fill="rgba(255,255,255,0.28)"/>
           </svg>
         </div>
-        <div class="sbody"><h3>Progress Presentation — 2</h3><p>Model training, APIs, dashboard integration, and interim testing</p><a class="slink" href="#">View Slides ↗</a></div>
-      </div>
-      <div class="scard">
-        <div class="sthumb" style="background:linear-gradient(135deg,#1e2d40,#2c3e58);">
-          <svg width="90" height="76" viewBox="0 0 90 76" fill="none">
-            <rect x="6" y="6" width="70" height="50" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-            <rect x="33" y="18" width="24" height="16" rx="5" stroke="rgba(255,255,255,0.28)" stroke-width="1.6" fill="none"/>
-            <path d="M28 32h34v18a5 5 0 01-5 5H33a5 5 0 01-5-5V32Z" fill="rgba(255,255,255,0.08)"/>
-            <circle cx="45" cy="41" r="3" fill="rgba(255,255,255,0.28)"/>
-          </svg>
+
+        <div class="sbody">
+          <h3>Final Presentation</h3>
+          <p>Final evaluation, findings, limitations, and future work</p>
+          <a class="slink"
+             href="https://drive.google.com/file/d/FILE_ID_4/view?usp=sharing"
+             target="_blank">
+            View Slides ↗
+          </a>
         </div>
-        <div class="sbody"><h3>Final Presentation</h3><p>Final evaluation, findings, limitations, and future work</p><a class="slink" href="#">View Slides ↗</a></div>
       </div>
+
     </div>
   </div>
 </section>
@@ -359,7 +477,7 @@
     <h3 class="about-subtitle">Our Team</h3>
     <div class="team-grid">
       <div class="mcard">
-        <div class="mavatar">J</div>
+        <img src="assets/janendra.jpg" alt="J" class="mavatar">
         <div class="mname">M. N. J. De Silva</div>
         <div class="mid">IT22318602 - Team Leader</div>
         <div class="mrole">Emotion-aware Engagement &amp; Academic Integrity Monitoring</div>
@@ -367,7 +485,7 @@
       </div>
 
       <div class="mcard">
-        <div class="mavatar">F</div>
+        <img src="assets/fahad.jpg" alt="J" class="mavatar">
         <div class="mname">A. A. M. Fahad</div>
         <div class="mid">IT22904928 - Team Member</div>
         <div class="mrole">Continuous Progress Monitoring &amp; Personalized Recommendation</div>
@@ -375,7 +493,7 @@
       </div>
 
       <div class="mcard">
-        <div class="mavatar">C</div>
+        <img src="assets/chamith.jpg" alt="J" class="mavatar">
         <div class="mname">D. P. C. R. Sarathchandra</div>
         <div class="mid">IT22886668 - Team Member</div>
         <div class="mrole">Adaptive Difficulty &amp; Dynamic Question Generation</div>
@@ -383,7 +501,7 @@
       </div>
 
       <div class="mcard">
-        <div class="mavatar">T</div>
+        <img src="assets/tharuka.jpg" alt="J" class="mavatar">
         <div class="mname">J. T. C. Jayawarna</div>
         <div class="mid">IT22921680 - Team Member</div>
         <div class="mrole">AI-powered Content Quality &amp; Feedback Analysis</div>
@@ -394,7 +512,7 @@
     <h3 class="about-subtitle supervisor-title">Supervisor</h3>
     <div class="supervisor-grid">
       <div class="mcard supervisor-card">
-        <div class="mavatar">L</div>
+        <img src="assets/lokesha.jpg" alt="J" class="mavatar">
         <div class="mname">Lokesha Weerasinghe</div>
         <div class="mid">Project Supervisor</div>
         <div class="mrole">Department of Information Technology, SLIIT</div>
@@ -415,7 +533,7 @@
         <p>Contact the research group for information about the AI-powered personalized mathematics learning platform, adaptive practice workflow, progress monitoring, content-quality analysis, or privacy-preserving engagement and integrity monitoring.</p>
         <div class="cdetail">
           <div class="cicon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1a4a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 8l10 7 10-7"/></svg></div>
-          <div><div class="clbl">Supervisor Email</div><div class="cval">lokesha.w@sliit.lk</div></div>
+          <div><div class="clbl">Email</div><div class="cval">mathsbuddy.info@gmail.com</div></div>
         </div>
         <div class="cdetail">
           <div class="cicon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1a4a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
@@ -443,7 +561,7 @@
 <footer>
   <div class="flogo">MathsBuddy &nbsp;·&nbsp; Final Group Dissertation 2026</div>
   <p>Department of Information Technology &nbsp;|&nbsp; Sri Lanka Institute of Information Technology</p>
-  <p>© 2026 MathsBuddy Research Group. All rights reserved.</p>
+  <p>© 2025 - 2026 MathsBuddy Research Group. All rights reserved.</p>
 </footer>
 
 <button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
