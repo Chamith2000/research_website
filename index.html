@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MathsBuddy | AI-Powered Personalized Mathematics Learning Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#home">
+  <div class="nav-logo-icon">
+  <img src="./assets/logo.png" alt="Math Buddy Logo">
+</div>
+  
+  <div class="nav-logo-info">
+    <span class="nav-logo-text">MathsBuddy</span>
+    <span class="nav-logo-tagline">Personalized Mathematics Learning for Grades 3–5</span>
+  </div>
+  
+</a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#domain">Domain</a></li>
+    <li><a href="#milestones">Milestones</a></li>
+    <li><a href="#documents">Documents</a></li>
+    <li><a href="#presentations">Slides</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <div class="hero-deco"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-left">
+    <!-- <div class="hero-badge"><span class="badge-dot"></span>Research Project 25-26J-195 &nbsp;·&nbsp; 2025/2026</div> -->
+    <h1 class="hero-title">AI-Powered Personalized Mathematics Learning Platform for <em>Elementary Students</em></h1>
+    
+    <p class="hero-abstract">
+      MathsBuddy is an AI-powered personalized mathematics learning platform for Grade 3, 4, and 5 students. It integrates adaptive difficulty and dynamic MCQ generation, continuous progress monitoring with personalized recommendations, AI-powered content quality and feedback analysis, and privacy-preserving emotion-aware engagement with academic-integrity monitoring.
+    </p>
+
+    <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 35px;">
+  <span style="background: rgba(0,180,216,0.1); color: #00b4d8; padding: 7px 14px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(0,180,216,0.3);">🎯 Adaptive Difficulty & MCQ Generation</span>
+  
+  <span style="background: rgba(0,180,216,0.1); color: #00b4d8; padding: 7px 14px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(0,180,216,0.3);">📈 LSTM Progress Monitoring</span>
+  
+  <span style="background: rgba(0,180,216,0.1); color: #00b4d8; padding: 7px 14px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(0,180,216,0.3);">🧩 Content Quality & Feedback Analysis</span>
+  
+  <span style="background: rgba(0,180,216,0.1); color: #00b4d8; padding: 7px 14px; border-radius: 6px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(0,180,216,0.3);">🧠 Emotion & Integrity Monitoring</span>
+</div>
+    
+    </div>
+  <div class="hero-right">
+    <!-- HERO ILLUSTRATION: Research workspace -->
+    <svg viewBox="0 0 460 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Outer glow circles -->
+      <circle cx="230" cy="200" r="172" fill="rgba(0,180,216,0.05)"/>
+      <circle cx="230" cy="200" r="128" fill="rgba(0,180,216,0.04)"/>
+      <!-- Main monitor frame -->
+      <rect x="105" y="95" width="250" height="168" rx="14" fill="#162e56" stroke="rgba(0,180,216,0.45)" stroke-width="1.8"/>
+      <rect x="116" y="106" width="228" height="142" rx="7" fill="#0d1f3c"/>
+      <!-- Screen: bar chart -->
+      <rect x="130" y="120" width="80" height="8" rx="4" fill="rgba(0,180,216,0.85)"/>
+      <rect x="130" y="136" width="200" height="4" rx="2" fill="rgba(255,255,255,0.18)"/>
+      <rect x="130" y="147" width="160" height="4" rx="2" fill="rgba(255,255,255,0.13)"/>
+      <!-- Bar chart -->
+      <rect x="258" y="115" width="72" height="124" rx="5" fill="rgba(26,74,138,0.5)"/>
+      <rect x="265" y="165" width="12" height="74" rx="3" fill="rgba(0,180,216,0.55)"/>
+      <rect x="282" y="148" width="12" height="91" rx="3" fill="rgba(255,255,255,0.55)"/>
+      <rect x="299" y="158" width="12" height="81" rx="3" fill="rgba(0,180,216,0.75)"/>
+      <rect x="316" y="140" width="12" height="99" rx="3" fill="rgba(255,255,255,0.4)"/>
+      <!-- Progress bars in screen -->
+      <rect x="130" y="166" width="110" height="5" rx="2.5" fill="rgba(255,255,255,0.07)"/>
+      <rect x="130" y="166" width="75" height="5" rx="2.5" fill="rgba(0,180,216,0.6)"/>
+      <rect x="130" y="178" width="110" height="5" rx="2.5" fill="rgba(255,255,255,0.07)"/>
+      <rect x="130" y="178" width="50" height="5" rx="2.5" fill="rgba(0,180,216,0.4)"/>
+      <rect x="130" y="190" width="110" height="5" rx="2.5" fill="rgba(255,255,255,0.07)"/>
+      <rect x="130" y="190" width="90" height="5" rx="2.5" fill="rgba(0,180,216,0.5)"/>
+      <!-- Monitor stand -->
+      <rect x="215" y="263" width="30" height="20" rx="2" fill="#162e56"/>
+      <rect x="195" y="282" width="70" height="9" rx="4" fill="#162e56"/>
+      <!-- Laptop keyboard hint -->
+      <rect x="90" y="298" width="280" height="14" rx="7" fill="#162e56" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+      <!-- Floating card: document -->
+      <g filter="url(#ds1)">
+        <rect x="42" y="72" width="68" height="82" rx="9" fill="#1a4a8a"/>
+        <rect x="42" y="72" width="68" height="82" rx="9" stroke="rgba(0,180,216,0.4)" stroke-width="1.2"/>
+        <!-- dog-ear -->
+        <path d="M94 72 L110 88 L94 88 Z" fill="rgba(0,0,0,0.2)"/>
+        <path d="M94 72 L110 88 H94 Z" fill="rgba(0,180,216,0.35)"/>
+        <rect x="52" y="94" width="40" height="6" rx="3" fill="rgba(0,180,216,0.75)"/>
+        <rect x="52" y="106" width="48" height="4" rx="2" fill="rgba(255,255,255,0.4)"/>
+        <rect x="52" y="116" width="36" height="4" rx="2" fill="rgba(255,255,255,0.3)"/>
+        <rect x="52" y="126" width="42" height="4" rx="2" fill="rgba(255,255,255,0.25)"/>
+        <rect x="52" y="136" width="28" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
+      </g>
+      <!-- Floating card: magnifier -->
+      <g filter="url(#ds2)">
+        <circle cx="390" cy="110" r="34" fill="#162e56"/>
+        <circle cx="390" cy="110" r="34" stroke="rgba(0,180,216,0.4)" stroke-width="1.2"/>
+        <circle cx="384" cy="104" r="14" stroke="rgba(0,180,216,0.85)" stroke-width="2.5" fill="none"/>
+        <line x1="394" y1="114" x2="407" y2="127" stroke="rgba(0,180,216,0.85)" stroke-width="2.8" stroke-linecap="round"/>
+      </g>
+      <!-- Floating card: gear -->
+      <g filter="url(#ds3)">
+        <circle cx="386" cy="302" r="30" fill="#162e56" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <circle cx="386" cy="302" r="11" stroke="rgba(0,180,216,0.8)" stroke-width="2.5" fill="none"/>
+        <rect x="383" y="271" width="6" height="8" rx="2" fill="rgba(0,180,216,0.55)"/>
+        <rect x="383" y="325" width="6" height="8" rx="2" fill="rgba(0,180,216,0.55)"/>
+        <rect x="356" y="299" width="8" height="6" rx="2" fill="rgba(0,180,216,0.55)"/>
+        <rect x="408" y="299" width="8" height="6" rx="2" fill="rgba(0,180,216,0.55)"/>
+      </g>
+      <!-- Floating badge: star -->
+      <g filter="url(#ds4)">
+        <circle cx="66" cy="310" r="30" fill="#162e56" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
+        <polygon points="66,290 70,304 84,304 73,312 77,326 66,318 55,326 59,312 48,304 62,304" fill="rgba(0,180,216,0.65)"/>
+      </g>
+
+      <!-- Dashed connectors -->
+      <line x1="108" y1="118" x2="108" y2="108" stroke="rgba(20,180,216,0.2)" stroke-width="1.2" stroke-dasharray="4 4"/>
+      <line x1="108" y1="118" x2="110" y2="118" stroke="rgba(0,180,216,0.2)" stroke-width="1.2" stroke-dasharray="4 4"/>
+      <line x1="356" y1="126" x2="340" y2="126" stroke="rgba(0,180,216,0.2)" stroke-width="1.2" stroke-dasharray="4 4"/>
+      <line x1="360" y1="280" x2="344" y2="268" stroke="rgba(0,180,216,0.2)" stroke-width="1.2" stroke-dasharray="4 4"/>
+      <line x1="93" y1="295" x2="105" y2="282" stroke="rgba(0,180,216,0.2)" stroke-width="1.2" stroke-dasharray="4 4"/>
+
+      <!-- Tiny decorative dots -->
+      <circle cx="196" cy="68" r="3.5" fill="rgba(0,180,216,0.35)"/>
+      <circle cx="210" cy="78" r="2" fill="rgba(0,180,216,0.2)"/>
+      <circle cx="265" cy="65" r="3.5" fill="rgba(0,180,216,0.35)"/>
+      <circle cx="430" cy="200" r="4.5" fill="rgba(255,255,255,0.07)"/>
+      <circle cx="40" cy="200" r="4.5" fill="rgba(255,255,255,0.07)"/>
+      <circle cx="230" cy="355" r="3" fill="rgba(0,180,216,0.2)"/>
+
+      <defs>
+        <filter id="ds1" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.25)"/>
+        </filter>
+        <filter id="ds2" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.2)"/>
+        </filter>
+        <filter id="ds3" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.2)"/>
+        </filter>
+        <filter id="ds4" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.2)"/>
+        </filter>
+      </defs>
+    </svg>
+  </div>
+</section>
+
+<!-- DOMAIN -->
+<section id="domain">
+  <div class="container">
+    <div class="domain-layout">
+      <div>
+        <div class="eyebrow">Research Domain</div>
+        <h2 class="stitle">Personalized Mathematics Learning for Elementary Students</h2>
+        <p class="sdesc">The research designs a full-stack Grade 3–5 mathematics platform that connects diagnostic adaptive practice, LSTM-based forecasting, Qwen-based content analysis, and privacy-preserving browser-side engagement and integrity monitoring.</p>
+        <div class="domain-cards">
+          <div class="dcard"><div class="dnum">01</div><div class="dbody"><h3>Literature Survey</h3><p>Elementary mathematics learners progress at different speeds, but traditional worksheets and many LMS platforms provide the same activity to all students and rely mainly on correctness or final marks.</p></div></div>
+          <div class="dcard"><div class="dnum">02</div><div class="dbody"><h3>Research Gap</h3><p>Reviewed systems rarely combine adaptive difficulty, dynamic question generation, long-term progress forecasting, content-quality analysis, and privacy-preserving engagement/integrity monitoring in one elementary mathematics platform.</p></div></div>
+          <div class="dcard"><div class="dnum">03</div><div class="dbody"><h3>Research Problem</h3><p>The central problem is how a learning platform can transform diverse learner and content evidence into personalized, trustworthy, and teacher-actionable support without replacing educator judgment.</p></div></div>
+          <div class="dcard"><div class="dnum">04</div><div class="dbody"><h3>Objectives &amp; Methodology</h3><p>The methodology integrates four components: adaptive difficulty and dynamic MCQ generation, continuous progress monitoring and recommendation, AI-powered content quality and feedback analysis, and emotion-aware integrity monitoring.</p></div></div>
+          <div class="dcard"><div class="dnum">05</div><div class="dbody"><h3>Key Technologies &amp; Results</h3><p>React, Node.js/Express, Flask, MongoDB, Qwen2.5-Math with QLoRA, Qwen-based LoRA models, LSTM, ARIMA baseline, MobileNetV2, YOLOv8, and TensorFlow.js; reported results include 69.20% difficulty accuracy, 1.59 count MAE, LSTM RMSE 0.10, 70% topic matching, and 90% video-feedback accuracy.</p></div></div>
+        </div>
+      </div>
+      <div class="domain-illus">
+        <!-- Domain: Knowledge graph illustration -->
+        <svg viewBox="0 0 380 430" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:370px;">
+          <rect width="380" height="430" rx="18" fill="#f0f4fa"/>
+          <rect x="0.75" y="0.75" width="378.5" height="428.5" rx="17.25" stroke="#d4dae6" stroke-width="1.5"/>
+          <!-- Top header -->
+          <rect width="380" height="54" rx="18" fill="#0d1f3c"/>
+          <rect y="36" width="380" height="18" fill="#0d1f3c"/>
+          <circle cx="24" cy="27" r="7" fill="rgba(255,255,255,0.14)"/>
+          <circle cx="44" cy="27" r="7" fill="rgba(255,255,255,0.09)"/>
+          <circle cx="64" cy="27" r="7" fill="rgba(255,255,255,0.09)"/>
+          <rect x="90" y="21" width="200" height="12" rx="6" fill="rgba(255,255,255,0.07)"/>
+          <!-- Center hub -->
+          <circle cx="190" cy="225" r="38" fill="#1a4a8a"/>
+          <circle cx="190" cy="225" r="38" stroke="rgba(0,180,216,0.6)" stroke-width="2.2" fill="none"/>
+          <text x="190" y="220" text-anchor="middle" fill="white" font-size="9.5" font-family="Inter,sans-serif" font-weight="700">RESEARCH</text>
+          <text x="190" y="234" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-size="8" font-family="Inter,sans-serif">CORE</text>
+          <!-- Satellite 1: top-left -->
+          <circle cx="96" cy="148" r="28" fill="#162e56" stroke="rgba(0,180,216,0.5)" stroke-width="1.5"/>
+          <text x="96" y="145" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="7.5" font-family="Inter,sans-serif" font-weight="600">LITERATURE</text>
+          <text x="96" y="157" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="7" font-family="Inter,sans-serif">SURVEY</text>
+          <!-- Satellite 2: top-right -->
+          <circle cx="286" cy="148" r="28" fill="#162e56" stroke="rgba(0,180,216,0.5)" stroke-width="1.5"/>
+          <text x="286" y="145" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="7.5" font-family="Inter,sans-serif" font-weight="600">RESEARCH</text>
+          <text x="286" y="157" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="7" font-family="Inter,sans-serif">GAP</text>
+          <!-- Satellite 3: bottom-left -->
+          <circle cx="88" cy="316" r="28" fill="#162e56" stroke="rgba(0,180,216,0.5)" stroke-width="1.5"/>
+          <text x="88" y="313" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="7.5" font-family="Inter,sans-serif" font-weight="600">METHODO-</text>
+          <text x="88" y="325" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="7" font-family="Inter,sans-serif">LOGY</text>
+          <!-- Satellite 4: bottom-right -->
+          <circle cx="294" cy="316" r="28" fill="#162e56" stroke="rgba(0,180,216,0.5)" stroke-width="1.5"/>
+          <text x="294" y="313" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="7.5" font-family="Inter,sans-serif" font-weight="600">TECHNO-</text>
+          <text x="294" y="325" text-anchor="middle" fill="rgba(255,255,255,0.55)" font-size="7" font-family="Inter,sans-serif">LOGIES</text>
+          <!-- Satellite 5: bottom -->
+          <circle cx="190" cy="372" r="26" fill="#00b4d8" opacity="0.92"/>
+          <text x="190" y="369" text-anchor="middle" fill="white" font-size="7.5" font-family="Inter,sans-serif" font-weight="700">OBJECTIVES</text>
+          <text x="190" y="381" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="7" font-family="Inter,sans-serif">&amp; GOALS</text>
+          <!-- Connectors -->
+          <line x1="120" y1="162" x2="160" y2="198" stroke="rgba(0,180,216,0.4)" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="262" y1="162" x2="222" y2="198" stroke="rgba(0,180,216,0.4)" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="112" y1="303" x2="162" y2="252" stroke="rgba(0,180,216,0.4)" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="268" y1="303" x2="220" y2="251" stroke="rgba(0,180,216,0.4)" stroke-width="1.5" stroke-dasharray="5 3"/>
+          <line x1="190" y1="263" x2="190" y2="346" stroke="rgba(0,180,216,0.5)" stroke-width="1.5" stroke-dasharray="5 3"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MILESTONES -->
+<section id="milestones">
+  <div class="container">
+    <div class="eyebrow">Milestones</div>
+    <h2 class="stitle">Project Assessments</h2>
+    <p class="sdesc">Select an assessment from the drop-down menu to view how each deliverable connects to the final dissertation. Dates and marks are kept as TBA where the official module schedule must be inserted.</p>
+    <div class="milestone-picker">
+      <div class="milestone-control">
+        <label for="milestoneSelect">Choose Assessment</label>
+        <select class="milestone-select" id="milestoneSelect">
+          <option value="proposal">Project Proposal</option>
+          <option value="progress1">Progress Presentation-1</option>
+          <option value="progress2">Progress Presentation-2</option>
+          <option value="finalAssessment">Final Assessment</option>
+          <option value="viva">Viva</option>
+          <option value="researchPaper">Final Report</option>
+        </select>
+      </div>
+      <div class="milestone-detail" aria-live="polite">
+        <h3 id="milestoneTitle">Project Proposal</h3>
+        <div class="milestone-meta">
+          <div class="meta-box">
+            <div class="meta-label">Assessment Date</div>
+            <div class="meta-value" id="milestoneDate">TBA</div>
+          </div>
+          <div class="meta-box">
+            <div class="meta-label">Marks Allocated</div>
+            <div class="meta-value" id="milestoneMarks">TBA</div>
+          </div>
+          <div class="meta-box">
+            <div class="meta-label">Status</div>
+            <div class="meta-value" id="milestoneStatus">Planned</div>
+          </div>
+        </div>
+        <p id="milestoneDescription">Initial assessment where the team presents the research problem, objectives, scope, methodology, project plan, and expected contribution of the MathsBuddy adaptive mathematics learning platform.</p>
+        <ul class="assessment-notes" id="milestoneNotes">
+          <li>Submit proposal document and presentation slides.</li>
+          <li>Explain the research gap, proposed AI components, and implementation plan.</li>
+          <li>Receive supervisor and panel feedback before development continues.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENTS -->
+<section id="documents">
+  <div class="container">
+    <div class="docs-layout">
+      <div>
+        <div class="eyebrow">Documentation</div>
+        <h2 class="stitle">Project Documents</h2>
+        <p class="sdesc">Research artefacts and supporting documents for MathsBuddy, including the final group dissertation report, architecture, component datasets, model evaluation evidence, monitoring specification, and presentation material.</p>
+        <!-- Document stack illustration -->
+        <svg viewBox="0 0 310 275" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px;margin-top:8px;">
+          <!-- Shadow stacked docs -->
+          <rect x="62" y="48" width="172" height="218" rx="10" fill="#dde3ef" stroke="#c8d0e0" stroke-width="1.2"/>
+          <rect x="42" y="36" width="172" height="218" rx="10" fill="#e8edf6" stroke="#d0d7e6" stroke-width="1.2"/>
+          <!-- Top doc (white) -->
+          <rect x="22" y="22" width="174" height="222" rx="10" fill="white" stroke="#00b4d8" stroke-width="1.5"/>
+          <!-- Header strip -->
+          <rect x="22" y="22" width="174" height="46" rx="10" fill="#0d1f3c"/>
+          <rect x="22" y="52" width="174" height="16" fill="#0d1f3c"/>
+          <text x="109" y="50" text-anchor="middle" fill="white" font-size="10.5" font-family="Inter,sans-serif" font-weight="700">PROJECT DOCS</text>
+          <!-- Lines -->
+          <rect x="38" y="82" width="104" height="8" rx="4" fill="#00b4d8" opacity="0.75"/>
+          <rect x="38" y="98" width="144" height="5" rx="2.5" fill="#d4dae6"/>
+          <rect x="38" y="111" width="124" height="5" rx="2.5" fill="#d4dae6"/>
+          <rect x="38" y="124" width="134" height="5" rx="2.5" fill="#d4dae6"/>
+          <rect x="38" y="148" width="94" height="8" rx="4" fill="#00b4d8" opacity="0.5"/>
+          <rect x="38" y="164" width="144" height="5" rx="2.5" fill="#d4dae6"/>
+          <rect x="38" y="177" width="104" height="5" rx="2.5" fill="#d4dae6"/>
+          <rect x="38" y="190" width="124" height="5" rx="2.5" fill="#d4dae6"/>
+          <!-- Approval seal -->
+          <circle cx="162" cy="218" r="24" fill="none" stroke="#00b4d8" stroke-width="2" stroke-dasharray="4 3" opacity="0.65"/>
+          <circle cx="162" cy="218" r="17" fill="none" stroke="#00b4d8" stroke-width="1.2" opacity="0.5"/>
+          <text x="162" y="215" text-anchor="middle" fill="#00b4d8" font-size="6.5" font-family="Inter,sans-serif" font-weight="700" opacity="0.85">APPROVED</text>
+          <text x="162" y="226" text-anchor="middle" fill="#00b4d8" font-size="6.5" font-family="Inter,sans-serif" opacity="0.7">2026</text>
+          <!-- Check mark next to doc -->
+          <circle cx="264" cy="90" r="22" fill="#e6f4ed" stroke="#00b4d8" stroke-width="1.2"/>
+          <polyline points="254,90 261,97 274,82" stroke="#15843a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+      <div>
+        <div class="docs-grid">
+          <a class="doc-item" href="assets/docs/AI_Powered_Math_Learning_Platform_Final_Report.docx"><div class="dext">DOCX</div><div><div class="dname">Final Group Dissertation Report</div><div class="dstat ok">● Available</div></div></a>
+          <a class="doc-item" href="#"><div class="dext">PDF</div><div><div class="dname">System Architecture Overview</div><div class="dstat ok">● Documented</div></div></a>
+          <a class="doc-item" href="#"><div class="dext">AI</div><div><div class="dname">Adaptive Difficulty &amp; MCQ Generation</div><div class="dstat ok">● Evaluated</div></div></a>
+          <a class="doc-item" href="#"><div class="dext">ML</div><div><div class="dname">Progress Monitoring Results</div><div class="dstat ok">● Evaluated</div></div></a>
+          <a class="doc-item" href="#"><div class="dext">NLP</div><div><div class="dname">Content Quality Analysis</div><div class="dstat ok">● Evaluated</div></div></a>
+          <a class="doc-item" href="#"><div class="dext">CV</div><div><div class="dname">Emotion &amp; Integrity Specification</div><div class="dstat ok">● Specified</div></div></a>
+          <a class="doc-item" href="#"><div class="dext">CSV</div><div><div class="dname">Component Dataset Summary</div><div class="dstat ok">● Documented</div></div></a>
+          <a class="doc-item" href="#"><div class="dext">REF</div><div><div class="dname">References &amp; Appendices</div><div class="dstat ok">● Included</div></div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRESENTATIONS -->
+<section id="presentations">
+  <div class="container">
+    <div class="eyebrow">Presentations</div>
+    <h2 class="stitle">Presentation Slides</h2>
+    <p class="sdesc">Presentation material summarising the research problem, integrated architecture, component methodology, implementation progress, evaluation results, limitations, and future work.</p>
+    <div class="slides-grid">
+      <div class="scard">
+        <div class="sthumb" style="background:linear-gradient(135deg,#0d1f3c 0%,#1a4a8a 100%);">
+          <svg width="90" height="76" viewBox="0 0 90 76" fill="none">
+            <rect x="6" y="6" width="70" height="50" rx="6" fill="rgba(255,255,255,0.07)" stroke="rgba(0,180,216,0.55)" stroke-width="1.3"/>
+            <rect x="16" y="17" width="34" height="6" rx="3" fill="rgba(0,180,216,0.85)"/>
+            <rect x="16" y="30" width="54" height="4" rx="2" fill="rgba(255,255,255,0.35)"/>
+            <rect x="16" y="40" width="40" height="4" rx="2" fill="rgba(255,255,255,0.25)"/>
+            <line x1="41" y1="56" x2="41" y2="66" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+            <rect x="29" y="66" width="24" height="5" rx="2.5" fill="rgba(255,255,255,0.18)"/>
+          </svg>
+        </div>
+        <div class="sbody"><h3>Proposal Presentation</h3><p>Research problem, objectives, scope, and four-component plan</p><a class="slink" href="#">View Slides ↗</a></div>
+      </div>
+      <div class="scard">
+        <div class="sthumb" style="background:linear-gradient(135deg,#162e56 0%,#1a4a8a 100%);">
+          <svg width="90" height="76" viewBox="0 0 90 76" fill="none">
+            <rect x="6" y="6" width="70" height="50" rx="6" fill="rgba(255,255,255,0.07)" stroke="rgba(0,180,216,0.55)" stroke-width="1.3"/>
+            <rect x="14" y="14" width="44" height="5" rx="2.5" fill="rgba(255,255,255,0.45)"/>
+            <rect x="14" y="38" width="10" height="18" rx="2" fill="rgba(0,180,216,0.5)"/>
+            <rect x="28" y="30" width="10" height="26" rx="2" fill="rgba(0,180,216,0.7)"/>
+            <rect x="42" y="24" width="10" height="32" rx="2" fill="rgba(0,180,216,0.9)"/>
+            <rect x="56" y="32" width="10" height="24" rx="2" fill="rgba(0,180,216,0.6)"/>
+          </svg>
+        </div>
+        <div class="sbody"><h3>Progress Presentation — 1</h3><p>Literature survey, architecture, datasets, and early AI design</p><a class="slink" href="#">View Slides ↗</a></div>
+      </div>
+      <div class="scard">
+        <div class="sthumb" style="background:linear-gradient(135deg,#1e2d40,#2c3e58);">
+          <svg width="90" height="76" viewBox="0 0 90 76" fill="none">
+            <rect x="6" y="6" width="70" height="50" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <rect x="33" y="18" width="24" height="16" rx="5" stroke="rgba(255,255,255,0.28)" stroke-width="1.6" fill="none"/>
+            <path d="M28 32h34v18a5 5 0 01-5 5H33a5 5 0 01-5-5V32Z" fill="rgba(255,255,255,0.08)"/>
+            <circle cx="45" cy="41" r="3" fill="rgba(255,255,255,0.28)"/>
+          </svg>
+        </div>
+        <div class="sbody"><h3>Progress Presentation — 2</h3><p>Model training, APIs, dashboard integration, and interim testing</p><a class="slink" href="#">View Slides ↗</a></div>
+      </div>
+      <div class="scard">
+        <div class="sthumb" style="background:linear-gradient(135deg,#1e2d40,#2c3e58);">
+          <svg width="90" height="76" viewBox="0 0 90 76" fill="none">
+            <rect x="6" y="6" width="70" height="50" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+            <rect x="33" y="18" width="24" height="16" rx="5" stroke="rgba(255,255,255,0.28)" stroke-width="1.6" fill="none"/>
+            <path d="M28 32h34v18a5 5 0 01-5 5H33a5 5 0 01-5-5V32Z" fill="rgba(255,255,255,0.08)"/>
+            <circle cx="45" cy="41" r="3" fill="rgba(255,255,255,0.28)"/>
+          </svg>
+        </div>
+        <div class="sbody"><h3>Final Presentation</h3><p>Final evaluation, findings, limitations, and future work</p><a class="slink" href="#">View Slides ↗</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="eyebrow">The Team</div>
+    <h2 class="stitle">About Us</h2>
+    <p class="sdesc">The research was carried out by four student researchers from the Department of Information Technology, Sri Lanka Institute of Information Technology. Each member contributed one AI component that was integrated into the final personalized mathematics learning platform under the supervision of Lokesha Weerasinghe.</p>
+    <div class="team-grid">
+      <div class="mcard">
+        <div class="mavatar">C</div>
+        <div class="mname">Dukduru Pedige Chamith Rathdunu Sarathchandra</div>
+        <div class="mid">IT22886668 · Student Researcher</div>
+        <div class="mrole">Adaptive Difficulty &amp; Dynamic MCQ Generation</div>
+        <a class="memail" href="mailto:chamithrathdunu2@gmail.com">chamithrathdunu2@gmail.com</a>
+      </div>
+      <div class="mcard">
+        <div class="mavatar">F</div>
+        <div class="mname">A. A. M. Fahad</div>
+        <div class="mid">IT22904928 · Student Researcher</div>
+        <div class="mrole">Continuous Progress Monitoring &amp; Recommendation</div>
+        <a class="memail" href="mailto:fahadazeez2021@gmail.com">fahadazeez2021@gmail.com</a>
+      </div>
+      <div class="mcard">
+        <div class="mavatar">J</div>
+        <div class="mname">Jayathri Tharuka Chamodinee Jayawarana</div>
+        <div class="mid">IT22921680 · Student Researcher</div>
+        <div class="mrole">AI-powered Content Quality &amp; Feedback Analysis</div>
+        <a class="memail" href="mailto:jayawarnatharuka@gmail.com">jayawarnatharuka@gmail.com</a>
+      </div>
+      <div class="mcard">
+        <div class="mavatar">J</div>
+        <div class="mname">M. N. Janendra de Silva</div>
+        <div class="mid">IT22318602 · Student Researcher</div>
+        <div class="mrole">Emotion-aware Engagement &amp; Academic Integrity Monitoring</div>
+        <a class="memail" href="mailto:janendra.silva2001@gmail.com">janendra.silva2001@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="eyebrow">Get In Touch</div>
+    <h2 class="stitle">Contact Us</h2>
+    <div class="contact-wrap">
+      <div class="cinfo">
+        <h3>Have a question about MathsBuddy?</h3>
+        <p>Contact the research group for information about the AI-powered personalized mathematics learning platform, adaptive practice workflow, progress monitoring, content-quality analysis, or privacy-preserving engagement and integrity monitoring.</p>
+        <div class="cdetail">
+          <div class="cicon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1a4a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2 8l10 7 10-7"/></svg></div>
+          <div><div class="clbl">Supervisor Email</div><div class="cval">lokesha.w@sliit.lk</div></div>
+        </div>
+        <div class="cdetail">
+          <div class="cicon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1a4a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <div><div class="clbl">Institute</div><div class="cval">Department of Information Technology, SLIIT, Malabe</div></div>
+        </div>
+        <div class="cdetail">
+          <div class="cicon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#1a4a8a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.01 2.19 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div><div class="clbl">Project ID</div><div class="cval">25-26J-195</div></div>
+        </div>
+      </div>
+      <div class="cform">
+        <div class="crow">
+          <div class="fg"><label>Full Name</label><input type="text" placeholder="Your name"></div>
+          <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+        </div>
+        <div class="fg"><label>Subject</label><input type="text" placeholder="Enquiry subject"></div>
+        <div class="fg"><label>Message</label><textarea placeholder="Write your message here..."></textarea></div>
+        <button class="btn btn-gold" style="align-self:flex-start;" onclick="alert('Message sent! Connect a backend to handle submissions.')">Send Message</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="flogo">MathsBuddy &nbsp;·&nbsp; Final Group Dissertation 2026</div>
+  <p>Department of Information Technology &nbsp;|&nbsp; Sri Lanka Institute of Information Technology</p>
+  <p>© 2026 MathsBuddy Research Group. All rights reserved.</p>
+</footer>
+
+<button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 19V5"/>
+    <path d="M5 12l7-7 7 7"/>
+  </svg>
+</button>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
