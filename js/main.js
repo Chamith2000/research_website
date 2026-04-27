@@ -19,11 +19,11 @@
       date: '15th August 2025',
       marks: '6%',
       status: 'Completed',
-      description: 'Individual report submitted by each team member explaining their specific component of the system, including planned approach, methodology, and contribution to the final MathsBuddy platform.',
+      description: 'This is an individual report that explains how each specific component of the system will be developed over the year.',
       notes: [
-        'Individual submission — each member describes their own component in detail.',
-        'Covers planned methodology and how the component integrates with the overall system.',
-        'Submitted by 15th August 2025 — worth 6% of the final grade.'
+        'Clearly describes the approach and planned methodology.',
+        'Explains how the individual component contributes to the final system.',
+        'Submitted on 15th August 2025 and worth 6%.'
       ]
     },
     proposal: {
@@ -31,11 +31,11 @@
       date: '8th – 12th September 2025',
       marks: '6%',
       status: 'Completed',
-      description: 'Group presentation to an academic panel introducing the MathsBuddy research project — covering the research problem, objectives, and the methodology behind the AI-powered mathematics learning system.',
+      description: 'In this stage, the group presents the initial project proposal to an academic panel.',
       notes: [
-        'Introduce the Grade 3–5 mathematics learning scope and research motivation.',
-        'Explain the four planned components: adaptive practice, progress monitoring, content analysis, and engagement/integrity monitoring.',
-        'Collect supervisor and panel feedback before implementation continues.'
+        'Highlights the research problem and project objectives.',
+        'Explains the methodology behind the AI-powered mathematics learning system.',
+        'Presented between 8th and 12th September 2025 and worth 6%.'
       ]
     },
     progress1: {
@@ -43,23 +43,11 @@
       date: '5th – 9th January 2026',
       marks: '15%',
       status: 'Completed',
-      description: 'First progress review where the project should be approximately 50% complete. The team demonstrates current progress, work completed, remaining tasks, and provides evidence such as a live demo, simulation, or partial system.',
+      description: 'At this stage, the project should be approximately 50% completed.',
       notes: [
-        'Present the React, Node.js/Express, Flask, and MongoDB integration architecture.',
-        'Show early design for adaptive difficulty, LSTM forecasting, content analysis, and monitoring pipelines.',
-        'Discuss practical, ethical, and data limitations identified during development.'
-      ]
-    },
-    checklist1: {
-      title: 'Checklist 1 — Git Repository',
-      date: '11th January 2026',
-      marks: '2%',
-      status: 'Completed',
-      description: 'Submit the Git repository link with a properly documented README.md file as evidence of project management and version control practices.',
-      notes: [
-        'Repository must be accessible and contain a well-structured README.md.',
-        'README should include project overview, setup instructions, and team details.',
-        'Submitted by 11th January 2026 — worth 2% of the final grade.'
+        'Demonstrate current progress and percentage of completion.',
+        'Explain work completed so far and remaining tasks.',
+        'Provide evidence such as a live demo, simulation, or partial system.'
       ]
     },
     progress2: {
@@ -67,47 +55,35 @@
       date: '9th – 12th March 2026',
       marks: '18%',
       status: 'Completed',
-      description: 'Second progress review requiring all four components to be integrated and the system at least 90% complete. A nearly finished solution must be demonstrated to the panel.',
+      description: 'By this point, the project should be close to completion and ready for a nearly finished demonstration.',
       notes: [
-        'All four components (adaptive MCQ, progress monitoring, content analysis, emotion/integrity monitoring) must be integrated.',
-        'Present Qwen2.5-Math/QLoRA, LSTM forecasting, MobileNetV2, and YOLOv8 progress.',
-        'Show UI workflows for diagnostic papers, generated practice, recommendations, and teacher dashboards.'
+        'All four components must be integrated.',
+        'The system should be at least 90% complete.',
+        'A nearly finished solution should be demonstrated.'
       ]
     },
-    thesisDraft: {
-      title: 'Thesis Draft Submission',
-      date: '26th April 2026',
-      marks: 'N/A',
-      status: 'Completed',
-      description: 'Draft versions of both the individual and group thesis must be submitted by this date ahead of the final submission deadline on 13th May 2026.',
-      notes: [
-        'Both individual and group thesis drafts due by 26th April 2026.',
-        'Should cover Introduction, Methodology, and Results sections.',
-        'Final submission deadline is 13th May 2026.'
-      ]
-    },
-    website: {
-      title: 'Website Submission',
-      date: '26th April 2026',
+    checklists: {
+      title: 'Checklist Submissions',
+      date: '11th January 2026 and 30th April 2026',
       marks: '2%',
-      status: 'Completed',
-      description: 'Project website showcasing the research must be submitted by 26th April 2026 and will be evaluated between 27th April – 6th May 2026. The site must include project overview, milestones, presentation slides, documents, About Us, and Contact Us sections.',
+      status: 'In Progress',
+      description: 'Checklist submissions confirm project management evidence and development tracking for the research project.',
       notes: [
-        'Website must include: project overview, milestones, slides, documents, About Us, and Contact sections.',
-        'Submitted by 26th April 2026 — evaluation period: 27th April – 6th May 2026.',
-        'Worth 2% of the final grade.'
+        'Checklist 1: submit Git repository with a properly documented README.md by 11th January 2026.',
+        'Checklist 2: submit MS Planner report exported from the project management tool by 30th April 2026.',
+        'Both checklist submissions together are worth 2%.'
       ]
     },
-    checklist2: {
-      title: 'Checklist 2 — MS Planner Report',
-      date: '30th April 2026',
-      marks: '2%',
+    finalThesis: {
+      title: 'Final Thesis Submissions',
+      date: '13th May 2026',
+      marks: 'Individual 15% + Group 4%',
       status: 'Pending',
-      description: 'Submit the MS Planner report exported from the project management tool as evidence of structured task planning and team management throughout the project.',
+      description: 'Final individual thesis and group thesis submissions cover the complete research project.',
       notes: [
-        'Export and submit the MS Planner report by 30th April 2026.',
-        'Report should reflect all tasks, assignments, and completion status.',
-        'Worth 2% of the final grade.'
+        'Individual Thesis is worth 15%; Group Thesis is worth 4%.',
+        'Draft versions must be submitted by 26th April 2026.',
+        'Documents should cover the introduction, methodology, results, and findings.'
       ]
     },
     finalPresentation: {
@@ -115,11 +91,11 @@
       date: '27th April – 6th May 2026',
       marks: '10%',
       status: 'Pending',
-      description: 'Final presentation of the fully completed MathsBuddy platform to the academic panel. The entire system must be finished, clearly explaining the implementation, component results, and research findings.',
+      description: 'The complete research project must be fully finished for this presentation.',
       notes: [
-        'Demonstrate the full end-to-end workflow: diagnostic assessment → adaptive practice → recommendation.',
-        'Present final results: 69.20% difficulty accuracy, 1.59 count MAE, LSTM RMSE 0.10, 70% topic matching, 90% video-feedback accuracy.',
-        'Clarify that emotion/integrity monitoring is documented as a design and prototype specification.'
+        'Clearly explain the entire system.',
+        'Present the implementation approach.',
+        'Explain the final results.'
       ]
     },
     viva: {
@@ -127,23 +103,23 @@
       date: '27th April – 6th May 2026',
       marks: '10%',
       status: 'Pending',
-      description: 'Oral examination where each team member answers questions based on their individual research work, model choices, architecture decisions, results, ethical considerations, limitations, and future improvements.',
+      description: 'An oral examination where each member answers questions based on their research work and the developed system.',
       notes: [
-        'Chamith: adaptive difficulty, question-count prediction, and QLoRA MCQ generation.',
-        'Fahad: continuous progress monitoring, LSTM forecasting, and resource recommendation.',
-        'Jayathri: content-quality, teacher-guide, and video-feedback analysis; Janendra: emotion-aware and integrity monitoring design.'
+        'Answer questions about the individual research component.',
+        'Explain system design, implementation choices, and results.',
+        'Conducted between 27th April and 6th May 2026 and worth 10%.'
       ]
     },
-    logbook: {
-      title: 'Logbook Submission',
-      date: '27th April – 6th May 2026',
+    website: {
+      title: 'Website Submission',
+      date: '26th April 2026',
       marks: '2%',
-      status: 'Pending',
-      description: 'Detailed record of daily work submitted during the viva period, including tasks completed, supervisor feedback and comments, and signatures confirming supervision.',
+      status: 'Completed',
+      description: 'A project website must be created to present the research project and supporting materials.',
       notes: [
-        'Record all tasks completed throughout the project duration.',
-        'Include supervisor feedback, meeting notes, and signed confirmations.',
-        'Worth 2% of the final grade.'
+        'Include project overview and research details.',
+        'Show milestones, progress, presentation slides, and documents.',
+        'Include About Us and Contact Us sections; evaluation is between 27th April and 6th May 2026.'
       ]
     },
     researchPaper: {
@@ -151,23 +127,23 @@
       date: '8th May 2026',
       marks: '10%',
       status: 'Pending',
-      description: 'Formal research paper summarising the MathsBuddy study, methodology, and results must be submitted by 8th May 2026.',
+      description: 'A formal research paper summarizing the study, methodology, and results must be submitted.',
       notes: [
-        'Paper should formally document the research problem, methodology, and key evaluation results.',
-        'Must follow the academic paper format required by the module.',
-        'Worth 10% of the final grade.'
+        'Summarize the research problem and study background.',
+        'Describe the methodology.',
+        'Present the results and submit by 8th May 2026.'
       ]
     },
-    finalAssessment: {
-      title: 'Final Thesis Submission',
-      date: '13th May 2026',
-      marks: 'Individual 15% + Group 4%',
+    logbook: {
+      title: 'Logbook Submission',
+      date: '27th April – 6th May 2026',
+      marks: '2%',
       status: 'Pending',
-      description: 'Final individual thesis (15%) and group thesis (4%) must be submitted by 13th May 2026. These documents cover the entire research including Introduction, Methodology, Results and findings.',
+      description: 'A detailed record of daily work must be submitted during the final evaluation period.',
       notes: [
-        'Individual thesis covers your specific component in full detail (15%).',
-        'Group thesis documents the integrated MathsBuddy platform as a whole (4%).',
-        'Draft versions were due 26th April 2026; final submission closes 13th May 2026.'
+        'Include tasks completed.',
+        'Include supervisor feedback and comments.',
+        'Include signatures confirming supervision.'
       ]
     }
   };
@@ -176,19 +152,17 @@
     { value:'proposalReport', label:'Proposal Report Submission' },
     { value:'proposal', label:'Proposal Presentation' },
     { value:'progress1', label:'Progress Presentation 1' },
-    { value:'checklist1', label:'Checklist 1 — Git Repository' },
     { value:'progress2', label:'Progress Presentation 2' },
-    { value:'thesisDraft', label:'Thesis Draft Submission' },
-    { value:'website', label:'Website Submission' },
-    { value:'checklist2', label:'Checklist 2 — MS Planner' },
+    { value:'checklists', label:'Checklist Submissions' },
+    { value:'finalThesis', label:'Final Thesis Submissions' },
     { value:'finalPresentation', label:'Final Presentation' },
     { value:'viva', label:'Final Viva' },
-    { value:'logbook', label:'Logbook Submission' },
+    { value:'website', label:'Website Submission' },
     { value:'researchPaper', label:'Research Paper Submission' },
-    { value:'finalAssessment', label:'Final Thesis Submission' }
+    { value:'logbook', label:'Logbook Submission' }
   ];
 
-  const dividerBefore = [2, 6, 8];
+  const dividerBefore = [2, 4, 6, 8];
 
   let navLinks = [];
   let sectionItems = [];
@@ -381,6 +355,8 @@
       '.sdesc',
       '.feature-badge',
       '.dcard',
+      '.tech-stack-card',
+      '.tech-item',
       '.domain-illus',
       '.milestone-picker',
       '.docs-layout > div',
@@ -672,7 +648,7 @@
       ring.style.opacity = '0';
     });
 
-    const hoverSelector = 'a, button, input, textarea, .doc-item, .scard, .dcard, .mcard, .feature-badge, .cs-trigger, .cs-option';
+    const hoverSelector = 'a, button, input, textarea, .doc-item, .scard, .dcard, .tech-item, .mcard, .feature-badge, .cs-trigger, .cs-option';
     document.addEventListener('mouseover', (event) => {
       if (event.target.closest(hoverSelector)) ring.classList.add('is-active');
     });
