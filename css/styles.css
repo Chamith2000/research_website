@@ -178,7 +178,7 @@ h2.stitle{
 }
 .sdesc{
   font-size:0.93rem;color:var(--muted);line-height:1.8;
-  max-width:580px;margin-bottom:52px;
+  max-width:580px;margin-bottom:10px;
 }
 
 /* DOMAIN */
@@ -488,7 +488,16 @@ footer p{font-size:0.75rem;color:rgba(255,255,255,0.38);}
 .about-subtitle{
   font-size:1.05rem;
   color:var(--gold-lt);
+  margin:10px 0 22px;
+  /*margin-left: 50px;*/
+  font-weight:700;
+  letter-spacing:0.4px;
+}
+.about-subtitle1{
+  font-size:1.05rem;
+  color:var(--gold-lt);
   margin:0 0 22px;
+  margin-left: 10px;
   font-weight:700;
   letter-spacing:0.4px;
 }
