@@ -331,8 +331,6 @@ navLinks.forEach((link) => {
   });
 });
 
-
-
 window.addEventListener('scroll', () => {
   toggleBackToTopButton();
   updateActiveNav();
@@ -354,7 +352,7 @@ const csOptions = [
   {value:'researchPaper',  label:'Research Paper Submission'},
   {value:'finalAssessment',label:'Final Thesis Submission'}
 ];
-const dividerBefore = [2, 6, 8]; // index of options where divider appears above
+const dividerBefore = [2, 6, 8];
 
 const cs       = document.getElementById('customSelect');
 const csTrigger= document.getElementById('csTrigger');

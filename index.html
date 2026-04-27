@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MathsBuddy | AI-Powered Personalized Mathematics Learning Platform</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathsBuddy | AI-Powered Personalized Mathematics Learning Platform</title>
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init("lBPr4bpUWfVCDu1Eb");
+  </script>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="#home">
-  <div class="nav-logo-icon">
-  <img src="./assets/logo.png" alt="Math Buddy Logo">
-</div>
-  
-  <div class="nav-logo-info">
-    <span class="nav-logo-text">MathsBuddy</span>
-    <span class="nav-logo-tagline">Personalized Mathematics Learning for Grades 3–5</span>
-  </div>
-  
-</a>
+    <div class="nav-logo-icon">
+      <img src="./assets/logo.png" alt="Math Buddy Logo">
+    </div>
+
+    <div class="nav-logo-info">
+      <span class="nav-logo-text">MathsBuddy</span>
+      <span class="nav-logo-tagline">Personalized Mathematics Learning for Grades 3–5</span>
+    </div>
+
+  </a>
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#domain">Domain</a></li>
@@ -33,7 +38,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  
+
 </nav>
 
 <!-- HOME -->
@@ -41,9 +46,8 @@
   <div class="hero-deco"></div>
   <div class="hero-grid-lines"></div>
   <div class="hero-left">
-    <!-- <div class="hero-badge"><span class="badge-dot"></span>Research Project 25-26J-195 &nbsp;·&nbsp; 2025/2026</div> -->
     <h1 class="hero-title">AI-Powered Personalized Mathematics Learning Platform for <em>Elementary Students</em></h1>
-    
+
     <p class="hero-abstract">
       MathsBuddy is an AI-powered personalized mathematics learning platform for Grade 3, 4, and 5 students. It integrates adaptive difficulty and dynamic MCQ generation, continuous progress monitoring with personalized recommendations, AI-powered content quality and feedback analysis, and privacy-preserving emotion-aware engagement with academic-integrity monitoring.
     </p>
@@ -62,7 +66,7 @@
           <span class="feature-content">
       <span class="feature-title">Adaptive Difficulty &amp; MCQ Generation</span>
       <span class="feature-desc">
-        Recommends suitable difficulty levels and generates topic-based MCQs according to each learner’s performance.
+        Recommends suitable difficulty levels and generates topic-based MCQs according to each learner's performance.
       </span>
     </span>
         </div>
@@ -119,46 +123,35 @@
     </span>
         </div>
       </div>
-</div>
-    
     </div>
+
+  </div>
   <div class="hero-right">
-    <!-- HERO ILLUSTRATION: Research workspace -->
     <svg viewBox="0 0 460 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Outer glow circles -->
       <circle cx="230" cy="200" r="172" fill="rgba(0,180,216,0.05)"/>
       <circle cx="230" cy="200" r="128" fill="rgba(0,180,216,0.04)"/>
-      <!-- Main monitor frame -->
       <rect x="105" y="95" width="250" height="168" rx="14" fill="#162e56" stroke="rgba(0,180,216,0.45)" stroke-width="1.8"/>
       <rect x="116" y="106" width="228" height="142" rx="7" fill="#0d1f3c"/>
-      <!-- Screen: bar chart -->
       <rect x="130" y="120" width="80" height="8" rx="4" fill="rgba(0,180,216,0.85)"/>
       <rect x="130" y="136" width="200" height="4" rx="2" fill="rgba(255,255,255,0.18)"/>
       <rect x="130" y="147" width="160" height="4" rx="2" fill="rgba(255,255,255,0.13)"/>
-      <!-- Bar chart -->
       <rect x="258" y="115" width="72" height="124" rx="5" fill="rgba(26,74,138,0.5)"/>
       <rect x="265" y="165" width="12" height="74" rx="3" fill="rgba(0,180,216,0.55)"/>
       <rect x="282" y="148" width="12" height="91" rx="3" fill="rgba(255,255,255,0.55)"/>
       <rect x="299" y="158" width="12" height="81" rx="3" fill="rgba(0,180,216,0.75)"/>
       <rect x="316" y="140" width="12" height="99" rx="3" fill="rgba(255,255,255,0.4)"/>
-      <!-- Progress bars in screen -->
       <rect x="130" y="166" width="110" height="5" rx="2.5" fill="rgba(255,255,255,0.07)"/>
       <rect x="130" y="166" width="75" height="5" rx="2.5" fill="rgba(0,180,216,0.6)"/>
       <rect x="130" y="178" width="110" height="5" rx="2.5" fill="rgba(255,255,255,0.07)"/>
       <rect x="130" y="178" width="50" height="5" rx="2.5" fill="rgba(0,180,216,0.4)"/>
       <rect x="130" y="190" width="110" height="5" rx="2.5" fill="rgba(255,255,255,0.07)"/>
       <rect x="130" y="190" width="90" height="5" rx="2.5" fill="rgba(0,180,216,0.5)"/>
-      <!-- Monitor stand -->
       <rect x="215" y="263" width="30" height="20" rx="2" fill="#162e56"/>
       <rect x="195" y="282" width="70" height="9" rx="4" fill="#162e56"/>
-      <!-- Laptop keyboard hint -->
       <rect x="90" y="298" width="280" height="14" rx="7" fill="#162e56" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-
-      <!-- Floating card: document -->
       <g filter="url(#ds1)">
         <rect x="42" y="72" width="68" height="82" rx="9" fill="#1a4a8a"/>
         <rect x="42" y="72" width="68" height="82" rx="9" stroke="rgba(0,180,216,0.4)" stroke-width="1.2"/>
-        <!-- dog-ear -->
         <path d="M94 72 L110 88 L94 88 Z" fill="rgba(0,0,0,0.2)"/>
         <path d="M94 72 L110 88 H94 Z" fill="rgba(0,180,216,0.35)"/>
         <rect x="52" y="94" width="40" height="6" rx="3" fill="rgba(0,180,216,0.75)"/>
@@ -167,14 +160,12 @@
         <rect x="52" y="126" width="42" height="4" rx="2" fill="rgba(255,255,255,0.25)"/>
         <rect x="52" y="136" width="28" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
       </g>
-      <!-- Floating card: magnifier -->
       <g filter="url(#ds2)">
         <circle cx="390" cy="110" r="34" fill="#162e56"/>
         <circle cx="390" cy="110" r="34" stroke="rgba(0,180,216,0.4)" stroke-width="1.2"/>
         <circle cx="384" cy="104" r="14" stroke="rgba(0,180,216,0.85)" stroke-width="2.5" fill="none"/>
         <line x1="394" y1="114" x2="407" y2="127" stroke="rgba(0,180,216,0.85)" stroke-width="2.8" stroke-linecap="round"/>
       </g>
-      <!-- Floating card: gear -->
       <g filter="url(#ds3)">
         <circle cx="386" cy="302" r="30" fill="#162e56" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
         <circle cx="386" cy="302" r="11" stroke="rgba(0,180,216,0.8)" stroke-width="2.5" fill="none"/>
@@ -183,27 +174,21 @@
         <rect x="356" y="299" width="8" height="6" rx="2" fill="rgba(0,180,216,0.55)"/>
         <rect x="408" y="299" width="8" height="6" rx="2" fill="rgba(0,180,216,0.55)"/>
       </g>
-      <!-- Floating badge: star -->
       <g filter="url(#ds4)">
         <circle cx="66" cy="310" r="30" fill="#162e56" stroke="rgba(255,255,255,0.07)" stroke-width="1"/>
         <polygon points="66,290 70,304 84,304 73,312 77,326 66,318 55,326 59,312 48,304 62,304" fill="rgba(0,180,216,0.65)"/>
       </g>
-
-      <!-- Dashed connectors -->
       <line x1="108" y1="118" x2="108" y2="108" stroke="rgba(20,180,216,0.2)" stroke-width="1.2" stroke-dasharray="4 4"/>
       <line x1="108" y1="118" x2="110" y2="118" stroke="rgba(0,180,216,0.2)" stroke-width="1.2" stroke-dasharray="4 4"/>
       <line x1="356" y1="126" x2="340" y2="126" stroke="rgba(0,180,216,0.2)" stroke-width="1.2" stroke-dasharray="4 4"/>
       <line x1="360" y1="280" x2="344" y2="268" stroke="rgba(0,180,216,0.2)" stroke-width="1.2" stroke-dasharray="4 4"/>
       <line x1="93" y1="295" x2="105" y2="282" stroke="rgba(0,180,216,0.2)" stroke-width="1.2" stroke-dasharray="4 4"/>
-
-      <!-- Tiny decorative dots -->
       <circle cx="196" cy="68" r="3.5" fill="rgba(0,180,216,0.35)"/>
       <circle cx="210" cy="78" r="2" fill="rgba(0,180,216,0.2)"/>
       <circle cx="265" cy="65" r="3.5" fill="rgba(0,180,216,0.35)"/>
       <circle cx="430" cy="200" r="4.5" fill="rgba(255,255,255,0.07)"/>
       <circle cx="40" cy="200" r="4.5" fill="rgba(255,255,255,0.07)"/>
       <circle cx="230" cy="355" r="3" fill="rgba(0,180,216,0.2)"/>
-
       <defs>
         <filter id="ds1" x="-20%" y="-20%" width="140%" height="140%">
           <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.25)"/>
@@ -239,7 +224,6 @@
         </div>
       </div>
       <div class="domain-illus">
-        <!-- Domain: AI adaptive learning image -->
         <img
                 src="assets/domain-learning.png"
                 alt="AI-powered adaptive mathematics learning platform illustration"
@@ -308,18 +292,13 @@
         <div class="eyebrow">Documentation</div>
         <h2 class="stitle">Project Documents</h2>
         <p class="sdesc">Research artefacts and supporting documents for MathsBuddy, including the final group dissertation report, architecture, component datasets, model evaluation evidence, monitoring specification, and presentation material.</p>
-        <!-- Document stack illustration -->
         <svg viewBox="0 0 310 275" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:300px;margin-top:8px;">
-          <!-- Shadow stacked docs -->
           <rect x="62" y="48" width="172" height="218" rx="10" fill="#dde3ef" stroke="#c8d0e0" stroke-width="1.2"/>
           <rect x="42" y="36" width="172" height="218" rx="10" fill="#e8edf6" stroke="#d0d7e6" stroke-width="1.2"/>
-          <!-- Top doc (white) -->
           <rect x="22" y="22" width="174" height="222" rx="10" fill="white" stroke="#00b4d8" stroke-width="1.5"/>
-          <!-- Header strip -->
           <rect x="22" y="22" width="174" height="46" rx="10" fill="#0d1f3c"/>
           <rect x="22" y="52" width="174" height="16" fill="#0d1f3c"/>
           <text x="109" y="50" text-anchor="middle" fill="white" font-size="10.5" font-family="Inter,sans-serif" font-weight="700">PROJECT DOCS</text>
-          <!-- Lines -->
           <rect x="38" y="82" width="104" height="8" rx="4" fill="#00b4d8" opacity="0.75"/>
           <rect x="38" y="98" width="144" height="5" rx="2.5" fill="#d4dae6"/>
           <rect x="38" y="111" width="124" height="5" rx="2.5" fill="#d4dae6"/>
@@ -328,12 +307,10 @@
           <rect x="38" y="164" width="144" height="5" rx="2.5" fill="#d4dae6"/>
           <rect x="38" y="177" width="104" height="5" rx="2.5" fill="#d4dae6"/>
           <rect x="38" y="190" width="124" height="5" rx="2.5" fill="#d4dae6"/>
-          <!-- Approval seal -->
           <circle cx="162" cy="218" r="24" fill="none" stroke="#00b4d8" stroke-width="2" stroke-dasharray="4 3" opacity="0.65"/>
           <circle cx="162" cy="218" r="17" fill="none" stroke="#00b4d8" stroke-width="1.2" opacity="0.5"/>
           <text x="162" y="215" text-anchor="middle" fill="#00b4d8" font-size="6.5" font-family="Inter,sans-serif" font-weight="700" opacity="0.85">APPROVED</text>
           <text x="162" y="226" text-anchor="middle" fill="#00b4d8" font-size="6.5" font-family="Inter,sans-serif" opacity="0.7">2026</text>
-          <!-- Check mark next to doc -->
           <circle cx="264" cy="90" r="22" fill="#e6f4ed" stroke="#00b4d8" stroke-width="1.2"/>
           <polyline points="254,90 261,97 274,82" stroke="#15843a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
         </svg>
@@ -379,7 +356,6 @@
             <rect x="29" y="66" width="24" height="5" rx="2.5" fill="rgba(255,255,255,0.18)"/>
           </svg>
         </div>
-
         <div class="sbody">
           <h3>Proposal Presentation</h3>
           <p>Research problem, objectives, scope, and four-component plan</p>
@@ -403,7 +379,6 @@
             <rect x="56" y="32" width="10" height="24" rx="2" fill="rgba(0,180,216,0.6)"/>
           </svg>
         </div>
-
         <div class="sbody">
           <h3>Progress Presentation — 1</h3>
           <p>Literature survey, architecture, datasets, and early AI design</p>
@@ -425,7 +400,6 @@
             <circle cx="45" cy="41" r="3" fill="rgba(255,255,255,0.28)"/>
           </svg>
         </div>
-
         <div class="sbody">
           <h3>Progress Presentation — 2</h3>
           <p>Model training, APIs, dashboard integration, and interim testing</p>
@@ -447,7 +421,6 @@
             <circle cx="45" cy="41" r="3" fill="rgba(255,255,255,0.28)"/>
           </svg>
         </div>
-
         <div class="sbody">
           <h3>Final Presentation</h3>
           <p>Final evaluation, findings, limitations, and future work</p>
@@ -463,7 +436,6 @@
   </div>
 </section>
 
-<!-- ABOUT -->
 <!-- ABOUT -->
 <section id="about">
   <div class="container">
@@ -528,8 +500,8 @@
           <div class="mrole">Department of Information Technology, SLIIT</div>
           <a class="memail" href="mailto:wishalya.t@sliit.lk">wishalya.t@sliit.lk</a>
         </div>
+      </div>
     </div>
-  </div>
 </section>
 
 <!-- CONTACT -->
@@ -554,15 +526,45 @@
           <div><div class="clbl">Phone Number</div><div class="cval">0765523093</div></div>
         </div>
       </div>
-      <div class="cform">
+      <form class="cform" onsubmit="sendEmail(event)">
         <div class="crow">
-          <div class="fg"><label>Full Name</label><input type="text" placeholder="Your name"></div>
-          <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com"></div>
+          <div class="fg">
+            <label for="contact-name">Full Name</label>
+            <input type="text" id="contact-name" placeholder="Your name" autocomplete="name">
+          </div>
+          <div class="fg">
+            <label for="contact-email">Email</label>
+            <input type="email" id="contact-email" placeholder="your@email.com" autocomplete="email">
+          </div>
         </div>
-        <div class="fg"><label>Subject</label><input type="text" placeholder="Enquiry subject"></div>
-        <div class="fg"><label>Message</label><textarea placeholder="Write your message here..."></textarea></div>
-        <button class="btn btn-gold" style="align-self:flex-start;" onclick="alert('Message sent! Connect a backend to handle submissions.')">Send Message</button>
-      </div>
+        <div class="crow">
+          <div class="fg">
+            <label for="contact-organization">Organization / Department</label>
+            <input type="text" id="contact-organization" placeholder="Your organization or department" autocomplete="organization">
+          </div>
+          <div class="fg">
+            <label for="contact-phone">Contact Number</label>
+            <input type="tel" id="contact-phone" placeholder="Your contact number" autocomplete="tel">
+          </div>
+        </div>
+        <div class="fg">
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" value="Request for MathsBuddy Project Information">
+        </div>
+        <div class="fg">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" aria-describedby="templateHint" placeholder="Write your message here..."></textarea>
+          <small class="template-hint" id="templateHint">The template auto-fills here, but you can edit this message before sending.</small>
+        </div>
+        <button type="submit" class="btn btn-gold" id="sendBtn" style="align-self:flex-start;">Send Message</button>
+      </form>
+
+      <aside class="email-template-card" aria-labelledby="emailTemplateTitle">
+        <div class="template-label">Mail Template</div>
+        <h3 id="emailTemplateTitle">Auto-filled Email Preview</h3>
+        <p class="template-note">The email below updates automatically when the user enters their name, organization, and contact number.</p>
+        <pre id="email-template-preview"></pre>
+      </aside>
     </div>
   </div>
 </section>
@@ -582,6 +584,143 @@
 </button>
 
 <script src="js/main.js"></script>
+
+<!-- EmailJS Send Function -->
+<script>
+  const DEFAULT_EMAIL_SUBJECT = 'Request for MathsBuddy Project Information';
+  let lastGeneratedMessage = '';
+
+  function getFieldValue(id) {
+    const field = document.getElementById(id);
+    return field ? field.value.trim() : '';
+  }
+
+  function buildEmailTemplate() {
+    const name = getFieldValue('contact-name') || '[Your Name]';
+    const organization = getFieldValue('contact-organization') || '[Organization / Department]';
+    const phone = getFieldValue('contact-phone') || '[Contact Number]';
+
+    return `Dear Project Team,
+
+I hope you are doing well.
+
+I am writing to express my interest in learning more about your MathsBuddy. I would appreciate it if you could share any available project documents, presentation materials, or details regarding demonstrations.
+
+Additionally, I would be grateful for any further information that could help me better understand the features and capabilities of the system.
+
+Thank you for your time and support. I look forward to your response.
+
+Kind regards,
+${name}
+${organization}
+${phone}`;
+  }
+
+  function refreshEmailTemplate(forceUpdateMessage = false) {
+    const subjectField = document.getElementById('contact-subject');
+    const messageField = document.getElementById('contact-message');
+    const preview = document.getElementById('email-template-preview');
+    const generatedMessage = buildEmailTemplate();
+
+    if (subjectField && !subjectField.value.trim()) {
+      subjectField.value = DEFAULT_EMAIL_SUBJECT;
+    }
+
+    if (preview) {
+      preview.textContent = generatedMessage;
+    }
+
+    // Keep auto-fill active, but do not overwrite a manually edited message.
+    if (
+            messageField &&
+            (forceUpdateMessage || !messageField.value.trim() || messageField.value === lastGeneratedMessage)
+    ) {
+      messageField.value = generatedMessage;
+    }
+
+    lastGeneratedMessage = generatedMessage;
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    ['contact-name', 'contact-organization', 'contact-phone'].forEach(function(id) {
+      const field = document.getElementById(id);
+      if (field) {
+        field.addEventListener('input', function() {
+          refreshEmailTemplate(false);
+        });
+      }
+    });
+
+    const subjectField = document.getElementById('contact-subject');
+    if (subjectField) {
+      subjectField.addEventListener('blur', function() {
+        if (!subjectField.value.trim()) {
+          subjectField.value = DEFAULT_EMAIL_SUBJECT;
+        }
+      });
+    }
+
+    refreshEmailTemplate(true);
+  });
+
+  function sendEmail(event) {
+    if (event) {
+      event.preventDefault();
+    }
+
+    refreshEmailTemplate(false);
+
+    var name         = getFieldValue('contact-name');
+    var email        = getFieldValue('contact-email');
+    var organization = getFieldValue('contact-organization');
+    var phone        = getFieldValue('contact-phone');
+    var subject      = getFieldValue('contact-subject') || DEFAULT_EMAIL_SUBJECT;
+    var message      = getFieldValue('contact-message') || buildEmailTemplate();
+    var btn          = document.getElementById('sendBtn');
+
+    if (!name || !email || !organization || !phone) {
+      alert('Please fill in your name, email, organization / department, and contact number before sending.');
+      return;
+    }
+
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    var templateParams = {
+      from_name: name,
+      from_email: email,
+      organization: organization,
+      contact_number: phone,
+      subject: subject,
+      message: message
+    };
+
+    emailjs.send('service_1lbtc6a', 'template_srvp77f', templateParams)
+            .then(function() {
+              alert('Message sent successfully! We will get back to you soon.');
+              document.getElementById('contact-name').value = '';
+              document.getElementById('contact-email').value = '';
+              document.getElementById('contact-organization').value = '';
+              document.getElementById('contact-phone').value = '';
+              document.getElementById('contact-subject').value = DEFAULT_EMAIL_SUBJECT;
+              refreshEmailTemplate(true);
+              btn.textContent = 'Send Message';
+              btn.disabled = false;
+            })
+            .catch(function(error) {
+              alert('Failed to send message. Please try again or email us directly at mathsbuddy.info@gmail.com');
+              console.error('EmailJS error:', error);
+              btn.textContent = 'Send Message';
+              btn.disabled = false;
+            });
+  }
+</script>
 
 </body>
 </html>

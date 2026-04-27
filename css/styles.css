@@ -21,21 +21,19 @@ nav{
 }
 .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;flex:0 0 auto;}
 .nav-logo-icon {
-  width: 38px; /* පින්තූරය පැහැදිලිව පේන්න පොඩ්ඩක් ලොකු කළා */
+  width: 38px;
   height: 38px;
-  background: var(--white); /* අලුත් ලෝගෝ එකේ පසුබිම සුදු නිසා */
+  background: var(--white);
   border-radius: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* පින්තූරය කොටුවෙන් එළියට යන එක නවත්වන්න */
+  overflow: hidden;
 }
-
-/* පින්තූරයට අදාළ අලුත් CSS කේතය (මේක CSS ෆයිල් එකේ අගට එකතු කරන්න) */
 .nav-logo-icon img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* පින්තූරය කොටුවට ගානට හැඩගැසෙන්න */
+  object-fit: cover;
 }
 .nav-logo-text{font-family:'Merriweather',serif;font-size:0.95rem;font-weight:700;color:var(--white);}
 .nav-links{display:flex;justify-content:center;gap:clamp(14px,1.7vw,26px);list-style:none;flex:1;}
@@ -91,12 +89,12 @@ nav{
 
 .nav-logo-info {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
 }
 
 .nav-logo-text {
-  line-height: 1.1; 
+  line-height: 1.1;
   margin-bottom: 2px;
 }
 
@@ -118,14 +116,14 @@ nav{
 .hero-deco{
   position:absolute;inset:0;
   background-image:
-    radial-gradient(circle at 18% 50%,rgba(201,168,76,0.08) 0%,transparent 45%),
-    radial-gradient(circle at 80% 20%,rgba(255,255,255,0.04) 0%,transparent 40%);
+          radial-gradient(circle at 18% 50%,rgba(201,168,76,0.08) 0%,transparent 45%),
+          radial-gradient(circle at 80% 20%,rgba(255,255,255,0.04) 0%,transparent 40%);
 }
 .hero-grid-lines{
   position:absolute;inset:0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);
+          linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),
+          linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);
   background-size:52px 52px;
 }
 .hero-left{position:relative;z-index:1;}
@@ -158,6 +156,7 @@ h1.hero-title em{color:var(--gold-lt);font-style:normal;}
 }
 .btn-gold{background:var(--gold);color:var(--navy);box-shadow:0 4px 16px rgba(201,168,76,0.35);}
 .btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px);}
+.btn-gold:disabled{opacity:0.7;cursor:not-allowed;transform:none;}
 .btn-ghost{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,0.28);}
 .btn-ghost:hover{border-color:rgba(255,255,255,0.7);background:rgba(255,255,255,0.07);transform:translateY(-2px);}
 .hero-right{position:relative;z-index:1;display:flex;align-items:center;justify-content:flex-end;}
@@ -346,7 +345,12 @@ h2.stitle{
 
 /* CONTACT */
 #contact{background:var(--white);}
-.contact-wrap{display:grid;grid-template-columns:1fr 1.4fr;gap:68px;align-items:start;}
+.contact-wrap{
+  display:grid;
+  grid-template-columns:minmax(240px,0.85fr) minmax(320px,1.1fr) minmax(280px,0.95fr);
+  gap:30px;
+  align-items:start;
+}
 .cinfo h3{font-family:'Merriweather',serif;font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:13px;}
 .cinfo p{font-size:0.88rem;color:var(--muted);line-height:1.8;margin-bottom:28px;}
 .cdetail{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px;}
@@ -367,7 +371,57 @@ h2.stitle{
   transition:border-color 0.2s;outline:none;
 }
 .fg input:focus,.fg textarea:focus{border-color:var(--blue);background:var(--white);}
-.fg textarea{resize:vertical;min-height:115px;}
+.fg textarea{resize:vertical;min-height:300px;}
+.fg textarea[readonly]{background:var(--white);color:var(--text);cursor:default;}
+.template-hint{font-size:0.68rem;color:var(--muted);line-height:1.5;}
+.email-template-card{
+  position: sticky;
+  top:100px;
+  width: 500px;
+  background:linear-gradient(180deg,var(--white),var(--off));
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:20px;
+  margin-left: 60px;
+  box-shadow:var(--shadow);
+}
+.template-label{
+  display:inline-flex;
+  margin-bottom:10px;
+  padding:4px 10px;
+  border-radius:999px;
+  background:rgba(0,180,216,0.10);
+  color:var(--blue);
+  font-size:0.64rem;
+  font-weight:800;
+  letter-spacing:0.8px;
+  text-transform:uppercase;
+}
+.email-template-card h3{
+  font-family:'Merriweather',serif;
+  font-size:1.05rem;
+  color:var(--navy);
+  margin-bottom:8px;
+}
+.template-note{
+  font-size:0.78rem;
+  color:var(--muted);
+  line-height:1.65;
+  margin-bottom:14px;
+}
+.email-template-card pre{
+  white-space:pre-wrap;
+  word-break:break-word;
+  background:var(--white);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:14px;
+  min-height:320px;
+  font-family:'Inter',sans-serif;
+  font-size:0.78rem;
+  line-height:1.7;
+  color:var(--text);
+}
 
 /* FOOTER */
 footer{
@@ -412,6 +466,7 @@ footer p{font-size:0.75rem;color:rgba(255,255,255,0.38);}
   #home{grid-template-columns:1fr;padding:100px 24px 60px;}.hero-right{display:none;}
   .container{padding:0 24px;}
   .domain-layout,.docs-layout,.contact-wrap{grid-template-columns:1fr;}
+  .email-template-card{position:static;}
   .domain-illus{display:none;}
   .slides-grid,.team-grid{grid-template-columns:repeat(2,1fr);}
   .milestone-control,.milestone-meta{grid-template-columns:1fr;}
