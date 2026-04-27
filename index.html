@@ -6,7 +6,10 @@
   <title>MathsBuddy | AI-Powered Personalized Mathematics Learning Platform</title>
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#0d1f3c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:wght@700;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <!-- EmailJS SDK -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -15,9 +18,12 @@
   </script>
 </head>
 <body>
+<div class="scroll-progress" aria-hidden="true"><span></span></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
 
 <!-- NAV -->
-<nav>
+<nav id="siteNav" aria-label="Primary navigation">
   <a class="nav-logo" href="#home">
     <div class="nav-logo-icon">
       <img src="./assets/logo.png" alt="Math Buddy Logo">
@@ -29,7 +35,13 @@
     </div>
 
   </a>
-  <ul class="nav-links">
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="mainNavLinks" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="nav-links" id="mainNavLinks">
     <li><a href="#home">Home</a></li>
     <li><a href="#domain">Domain</a></li>
     <li><a href="#milestones">Milestones</a></li>
@@ -361,7 +373,7 @@
           <p>Research problem, objectives, scope, and four-component plan</p>
           <a class="slink"
              href="https://docs.google.com/presentation/d/1WgdsRfWbQP6NNt8GJ1lBDxWp91h103KU/edit?usp=drive_link&ouid=105411969926452653442&rtpof=true&sd=true"
-             target="_blank">
+             target="_blank" rel="noopener">
             View Slides ↗
           </a>
         </div>
@@ -384,7 +396,7 @@
           <p>Literature survey, architecture, datasets, and early AI design</p>
           <a class="slink"
              href="https://drive.google.com/file/d/1HZ-Kg9QUOKw7BZiW7pioUsBkP9g2dkB1/view?usp=drive_link"
-             target="_blank">
+             target="_blank" rel="noopener">
             View Slides ↗
           </a>
         </div>
@@ -405,7 +417,7 @@
           <p>Model training, APIs, dashboard integration, and interim testing</p>
           <a class="slink"
              href="https://drive.google.com/file/d/1rxeoS4zF1gbjcoeSkD3yENx5grahkJ0B/view?usp=drive_link"
-             target="_blank">
+             target="_blank" rel="noopener">
             View Slides ↗
           </a>
         </div>
@@ -426,7 +438,7 @@
           <p>Final evaluation, findings, limitations, and future work</p>
           <a class="slink"
              href="https://drive.google.com/file/d/FILE_ID_4/view?usp=sharing"
-             target="_blank">
+             target="_blank" rel="noopener">
             View Slides ↗
           </a>
         </div>
@@ -448,12 +460,12 @@
 
     <div class="team-grid">
       <h3 class="about-subtitle supervisor-title">Supervisor</h3>
-      <h3 class="about-subtitle1 supervisor-title">Co Supervisor</h3>
+      <h3 class="about-subtitle1 supervisor-title1">Co Supervisor</h3>
     </div>
-    <div class="team-grid">
+    <div class="team-grid supervisor-row">
       <div class="supervisor-grid">
         <div class="mcard supervisor-card">
-          <img src="assets/lokesha.jpg" alt="J" class="mavatar">
+          <img loading="lazy" decoding="async" src="assets/lokesha.jpg" alt="J" class="mavatar">
           <div class="mname">Lokesha Weerasinghe</div>
           <div class="mid">Project Supervisor</div>
           <div class="mrole">Department of Information Technology, SLIIT</div>
@@ -462,7 +474,7 @@
       </div>
       <div class="supervisor-grid">
         <div class="mcard supervisor-card">
-          <img src="assets/wishalya.jpg" alt="J" class="mavatar">
+          <img loading="lazy" decoding="async" src="assets/wishalya.jpg" alt="J" class="mavatar">
           <div class="mname">Wishalya</div>
           <div class="mid">Project Co Supervisor</div>
           <div class="mrole">Department of Information Technology, SLIIT</div>
@@ -473,7 +485,7 @@
     <h3 class="about-subtitle">Our Team</h3>
     <div class="team-grid">
       <div class="mcard">
-        <img src="assets/janendra.jpg" alt="J" class="mavatar">
+        <img loading="lazy" decoding="async" src="assets/janendra.jpg" alt="J" class="mavatar">
         <div class="mname">M. N. J. De Silva</div>
         <div class="mid">IT22318602 - Team Leader</div>
         <div class="mrole">Emotion-aware Engagement &amp; Academic Integrity Monitoring</div>
@@ -481,7 +493,7 @@
       </div>
 
       <div class="mcard">
-        <img src="assets/fahad.jpg" alt="J" class="mavatar">
+        <img loading="lazy" decoding="async" src="assets/fahad.jpg" alt="J" class="mavatar">
         <div class="mname">A. A. M. Fahad</div>
         <div class="mid">IT22904928 - Team Member</div>
         <div class="mrole">Continuous Progress Monitoring &amp; Personalized Recommendation</div>
@@ -489,7 +501,7 @@
       </div>
 
       <div class="mcard">
-        <img src="assets/chamith.jpg" alt="J" class="mavatar">
+        <img loading="lazy" decoding="async" src="assets/chamith.jpg" alt="J" class="mavatar">
         <div class="mname">D. P. C. R. Sarathchandra</div>
         <div class="mid">IT22886668 - Team Member</div>
         <div class="mrole">Adaptive Difficulty &amp; Dynamic Question Generation</div>
@@ -497,7 +509,7 @@
       </div>
 
       <div class="mcard">
-        <img src="assets/tharuka.jpg" alt="J" class="mavatar">
+        <img loading="lazy" decoding="async" src="assets/tharuka.jpg" alt="J" class="mavatar">
         <div class="mname">J. T. C. Jayawarna</div>
         <div class="mid">IT22921680 - Team Member</div>
         <div class="mrole">AI-powered Content Quality &amp; Feedback Analysis</div>
