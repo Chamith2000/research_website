@@ -66,7 +66,7 @@
       title: 'Checklist Submissions',
       date: '11th January 2026 and 30th April 2026',
       marks: '2%',
-      status: 'In Progress',
+      status: 'Completed',
       description: 'Checklist submissions confirm project management evidence and development tracking for the research project.',
       notes: [
         'Checklist 1: submit Git repository with a properly documented README.md by 11th January 2026.',
@@ -90,7 +90,7 @@
       title: 'Final Presentation',
       date: '27th April – 6th May 2026',
       marks: '10%',
-      status: 'Pending',
+      status: 'In Progress',
       description: 'The complete research project must be fully finished for this presentation.',
       notes: [
         'Clearly explain the entire system.',
@@ -102,7 +102,7 @@
       title: 'Final Viva',
       date: '27th April – 6th May 2026',
       marks: '10%',
-      status: 'Pending',
+      status: 'In Progress',
       description: 'An oral examination where each member answers questions based on their research work and the developed system.',
       notes: [
         'Answer questions about the individual research component.',
